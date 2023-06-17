@@ -1,0 +1,814 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+/* font for "event planner" */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.cdnfonts.com/css/claster-oleander-signature');
+
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+/* Universal css */
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 62%;
+    overflow-x: hidden;
+}
+
+/*  if you remove it your screen will not be scrolled */
+/* body {
+ height: 3000px; 
+} */
+
+/* ******************button started!****************** */
+
+/*---------------- css on "explore button"------- */
+.btn {
+    height: 35px;
+    width: 100px;
+    background: none;
+    font-weight: bold;
+    border: 2px;
+    color: rgb(88, 8, 51);
+    border-radius: 30px;
+    background: linear-gradient(120deg, #992c4b, #ffcf86);
+    font-size: 20px;
+    margin: 20px 0;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 0;
+    position: relative;
+    font-family:   'Claster Oleander', sans-serif;
+}
+
+
+/* hovor on "explore button" */
+.btn:hover {
+    color: whitesmoke;
+    box-shadow: 2px 2px 4px #d9437c;
+    height: 45px;
+    width: 110px;
+    transition: 0.5s;
+
+}
+
+/**********************button ended!****************** */
+
+/*****************header started***********************/
+header {
+    /* setting header */
+    display: flex;
+    /* vertically center */
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(42 20 30);
+    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3);
+    /* fixed at top of the screen even if you scroll down*/
+    position: fixed;
+    /* navigation main top sy gap */
+    top: 0;
+    left: 0;
+    /* explore button will not comes in front when you  open navbar */
+    z-index: 1000;
+
+    padding: 3px 6px;
+    width: 100%;
+}
+
+/*--------- logo---------- */
+
+/* ----------logo image---------- */
+header .logo img {
+    display: block;
+    /* Make sure max-width is added */
+    max-width: 100%;
+    padding-left: 50px;
+    
+}
+
+header .navbar ul {
+    /* ------------converting it to horizontal navigation--------- */
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+/* ------------margin on horizontal navigation---------- */
+header .navbar ul li {
+    margin: 0 10px;
+}
+
+/* navigation (home ,about us etc) */
+header .navbar ul li a {
+    font-size: 27px;
+    font-weight: bolder;
+    color: rgb(255, 191, 102);
+    font-family:   'Claster Oleander', sans-serif;
+    letter-spacing: 2px;
+}
+
+/* hovor on navigation */
+header .navbar ul li a:hover {
+    color:rgb(192, 111, 117);
+    transition: 0.8s;
+}
+
+/* font awsome cdn - bars */
+header .fa-bars {
+    font-size: 25px;
+    color: #666;
+    cursor: pointer;
+    /* to hide from full screen(desktop) */
+    display: none;
+}
+
+/****************header ended(***************** */
+/*******************home pages started!****************) */
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background image */
+    background: linear-gradient(to bottom, rgba(220, 139, 34, 0.507), rgba(51, 1, 19, 0.881)),url(/images/bg-1.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* ----------- all content---------- */
+.home .content {
+    margin-top: 100px;
+    text-align: center;
+    padding: 30px;
+    background-color: #0d0009a7;
+    
+    border: 5px;
+    border-radius: 20px;
+}
+
+.home .content h1 {
+    font-size: 50px;
+     color: rgb(155, 171, 169);
+     font-family: 'Claster Oleander', sans-serif;
+}
+
+.home .content p {
+    font-size: 30px;
+    font-family:'Sacramento', cursive;
+
+    border-bottom: 2px solid  rgb(88, 8, 51);
+    color: rgb(255, 204, 208);
+    padding: 1% 0;
+    width: 100%;
+}
+
+.home :hover
+{
+    background-color: rgb(18, 2, 11);
+    transition: 0.9s;
+}
+.content :hover
+{
+    text-shadow: 2px 2px 4px #d9437c;
+    transition: 0.9s;
+}
+/*home contentx */
+.homex {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgba(51, 1, 19, 0.908), rgba(252, 189, 51, 0.713)),url(/images/homebg2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+.homex .contentx {
+    margin-top: 100px;
+    text-align: center;
+    padding: 30px;
+    background-color: #0d0009a7;
+    border: 5px;
+    border-radius: 20px;
+}
+.homex .contentx p {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 2px solid  rgb(88, 8, 51);
+    color: rgb(243, 196, 199);
+    padding: 1% 0;
+    width: 100%;
+}
+.homex :hover
+{
+    background-color: rgb(18, 2, 11);
+    transition: 0.9s;
+}
+/*bg video*/
+#background-video {
+  min-width: 100%;
+  min-height: 100%;
+  }
+/* ----------- all content2---------- */
+/* ****************home pages ended****************** */
+
+/*---------------------------------------------ABOUT US------------------------------------------------------------  */
+/* *********************about pages started!**************** */
+
+/* ---------------ABOUT US CSS FOR HEADING:h1 ------------*/
+.heading {
+
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(252, 251, 252);
+    font-family: 'Claster Oleander', sans-serif;
+    padding: 5px;
+    padding-top: 10%;
+    margin: 10px;
+
+}
+
+.heading:hover {
+    color: rgb(228, 167, 113);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* full content plus button plus image*/
+.about .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* css for about us image position */
+.about .row .image {
+    flex: 50%;
+    padding: 2%;
+}
+
+/* about us image width(size) */
+.about .row .image img {
+    border-radius: 10px;
+    width: 70%;
+    margin-left: 15%;
+}
+
+/* only content plus button, not image */
+.about .row .content {
+    margin-left: 2%;
+}
+
+/* targeting heading */
+.about .row .content h3 {
+    font-size: 40px;
+    color: rgb(201, 167, 185);
+    font-family: 'Playball', cursive;
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+}
+
+/* taregting paragraph */
+.about .row .content p {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 3% 0;
+    background-color: #19030dbf;
+    font-family: 'Montserrat', sans-serif;
+}
+.about .row .content p:hover
+ { background-color: #19030d;}
+.about{
+    /* background image */
+  background: linear-gradient(to bottom, rgba(61, 2, 16, 0.77), rgba(51, 26, 2, 0.574)),url(/images/servicesevento.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* css for "your work"on about us page */
+.about .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .box-container .box {
+    padding: 2px 1px;
+    text-align: center;
+    border:none;
+    background: linear-gradient(120deg, #b67184, #f0d6b1);
+    width: 260px;
+    margin: 2%;
+}
+.about .box-container .box:hover {
+    background: linear-gradient(120deg, #e7668a, #edbc72);
+     transition: 0.9s;
+}
+
+/* icons color */
+.about .box-container .box i {
+    color: rgb(35, 2, 14);
+    font-size: 4rem;
+}
+
+/* values */
+.about .box-container .box h3 {
+    color: #333;
+    font-size: 2.5rem;
+    padding: 3% 0;
+}
+
+.about .box-container .box p {
+    color: #666;
+    font-size: 20px;
+}
+.map{
+ display: flex;
+ justify-content: center;
+align-items: center;
+}
+.map iframe{
+    width: 1000px;
+    height: 200px;
+    border: 3px solid  rgb(88, 8, 51);
+}
+
+/*******************about pages ended****************** */
+
+
+/*---------------------------------------------SERVICES------------------------------------------------------------  */
+/* *******service pages starte******* */
+ 
+/* background color */
+.service {
+    /* background image */
+    background: linear-gradient(to bottom, rgba(105, 27, 56, 0.815), rgba(3, 155, 112, 0.403)),url(/images/servicesevento.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+.service .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* all six boxes */
+.service .box-container .box {
+    width: 30%;
+    padding: 2% 1%;
+    text-align: center;
+    background: linear-gradient(190deg, #02302ec1, #380c19da);
+    border: 4px;
+    border-radius: 7px;
+    margin: 2%;
+    cursor: pointer;
+}
+
+/* icons */
+.service .box-container .box i {
+    color: rgb(163, 121, 138);
+    font-size: 40px;
+    padding: 1px 0;
+}
+
+/* heading */
+.service .box-container .box h3 {
+    color: rgb(255, 191, 102);
+    font-size: 2rem;
+}
+
+/* paragraph */
+.service .box-container .box p {
+    color: rgb(217, 215, 215);
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.service .box-container .box:hover {
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.3);
+    background-color: #3e1029;
+    transition: 0.5s;
+}
+
+
+
+/* ******service pages ende****** */
+/*---------------------------------------------PROJECTS------------------------------------------------------------  */
+/* *****project pages started****** */
+.project {
+    background: linear-gradient(to bottom, rgba(53, 3, 42, 0.825), rgba(2, 83, 60, 0.403)),url(/images/bggg.jpg) no-repeat;
+    
+    min-height: 100vh;
+}
+
+/* our project */
+.project .heading {
+    color: rgb(255, 255, 255);
+   
+}
+
+.project .heading:hover {
+    color: #d386c8;
+
+}
+
+.project .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2px 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* css for box */
+.project .box-container .box {
+    width: 30%;
+    height: 40vh;
+    box-shadow: 0 .3rem .5rem #000;
+    overflow: hidden;
+    position: relative;
+    margin: 7px;
+    border-radius: 8px;
+}
+
+.project .box-container .box:hover {
+    box-shadow: 0 3rem 5rem #000;
+    cursor: pointer;
+    border: 6px solid rgb(224, 167, 224)
+}
+
+/* css for image */
+.project .box-container .box img {
+    height: 100%;
+    width: 100%;
+    /* it is used to specify how an <img>should be resized to fit its container*/
+    object-fit: cover;
+}
+
+
+
+/* *******project pages ended******* */
+
+
+/*---------------------------------------------FEEDBACK------------------------------------------------------------  */
+/* ******************feedback pages started!*******************/
+.feedback {
+    position: relative;
+    /* z-index: 0; */
+    min-height: 100vh;
+    padding-bottom: 4px;
+    background: linear-gradient(to bottom, rgba(46, 1, 24, 0.833), rgba(228, 195, 97, 0.685)),url(/images/homebg2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+/* css on heading */
+.feedback .heading {
+    color: rgb(210, 134, 134);
+}
+.feedback .heading:hover{
+    color: rgb(64, 216, 204);
+}
+/* css on form */
+
+.feedback .form-container form {
+    width: 70%;
+    margin: 2px auto;
+    padding: 4px;
+    box-shadow: 0 .3rem .5rem #000;
+    text-align: center;
+    border-right: 4px solid rgba(0, 0, 0, 0.863);
+    border-left: 4px solid rgba(0, 0, 0, 0.863);
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+/* input boxes-row */
+.feedback .form-container form .inputBox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* css on boxes (input , select)*/
+.feedback .form-container form .inputBox input {
+    height: 6vh;
+    width: 49%;
+    background: rgb(243, 187, 140);
+    /* text color */
+    color: rgb(167, 41, 41);
+    padding: 0 3px;
+    margin: 5px 0;
+    font-size: 15px;
+    outline:none;
+    border: 2px solid rgb(194, 98, 98);
+    border-radius: 6px;
+}
+
+/* textbox */
+.feedback .form-container form textarea {
+    height: 25vh;
+    width: 100%;
+   background: rgb(243, 187, 140);
+    color: rgb(0, 0, 0);
+    padding: 3px;
+    margin: 5px 0;
+    font-size: 15px;
+    outline: none;
+    border: 2px solid black;
+    /* you cannot resize the textbox when you go live */
+    resize: none;
+    border-radius: 6px;
+}
+
+/* submit button */
+.feedback .form-container form input[type="submit"] {
+    color: rgb(59, 4, 23);
+    border-color: rgb(88, 19, 19);
+    background: linear-gradient(130deg, #f87f5a, #fbcd98);
+    font-family:   'Claster Oleander', sans-serif;;
+}
+/* hovor on submit button */
+.feedback .form-container form input[type="submit"]:hover {
+    font-size: 27px;
+    border-color: rgb(255, 255, 255)en;
+    transition: 0.56s;
+}
+
+/* ******************feedback pages ended!*******************/
+/* ******************post pages started!*******************/
+/* ******************post pages started!*******************/
+.post {
+    background: linear-gradient(to bottom, rgba(46, 1, 24, 0.833), rgba(211, 180, 87, 0.83)),url(/images/event18.jpeg) no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
+
+/* container */
+.post .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2px 0;
+}
+
+/* css on boxes */
+.post .box-container .box {
+    width: 350px;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    margin: 3px 3px;
+}
+
+/* image in box */
+.post .box-container .box img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* css on content */
+.post .box-container .box .content {
+    padding: 3px;
+}
+
+/* calender date */
+.post .box-container .box .content span {
+    font-size: 15px;
+    color: #666;
+}
+
+/* calender icon */
+.post .box-container .box .content span i {
+    padding: 2px 0;
+    color: green;
+}
+
+/* heading */
+.post .box-container .box .content h3 {
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+/* hovor on heading */
+.post .box-container .box .content:hover h3 {
+    color: purple;
+    transition: 0.5s;
+}
+
+/* css on paragraph */
+.post .box-container .box .content p {
+    color: whitesmoke;
+    font-size: 15px;
+}
+#postbg
+{
+    background: linear-gradient(to bottom, rgba(46, 1, 24, 0.833), rgba(228, 195, 97, 0.859)),url(/images/postgif2.gif) no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+#postbg h1
+{
+    font-size: 50px;
+    font-family:'Sacramento', cursive;
+    color: rgb(255, 250, 240);
+}
+
+/* ************************post pages ended************************ */
+/* ************************post pages ended************************ */
+/* ************************footer started!****************-------------------------------------------------------*********/
+.footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    padding-top: 10px;
+    color: #fff;
+    background: linear-gradient(to bottom, rgba(98, 3, 31, 0.851), rgb(37, 3, 15)),url(/images/footer2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content p{
+    max-width: 500px;
+    font-size: 15px;
+    color: #cacdd2;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 25px;
+}
+
+.socials a img{
+    width: 30px;
+    transition:  .4s ease;
+}
+.socials a:hover img{
+    width: 35px;
+}
+/* end line */
+.footer .credit {
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+    width: 85%;
+    margin: 0 auto;
+    border-top: 2px solid rgb(29, 29, 29);
+     
+}
+
+/* names */
+
+.footer .credit p{
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-family: 'Sacramento', cursive;
+}
+.footer .credit ul{
+    display: flex;
+    justify-content: space-between;
+}
+.footer .credit li {
+    font-size: 15px;
+    color: rgb(179, 117, 41);
+    
+}
+
+/* hovor on names */
+.footer .credit li:hover {
+    color: whitesmoke;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* ******************footer ended!***************** */
+
+/* ***************media queries started for navigation*********---------------------------------------****** */
+
+@media (max-width:768px) {
+
+    /* -------menu bars displayed-------- */
+
+    header .fa-bars {
+        display: block;
+    }
+
+    /*-------------- vertical navigation  ------------*/
+    header .navbar {
+
+        position: fixed;
+        top: 10%;
+        /* left side sy gap */
+        left: 0;
+        width: 100%;
+
+
+        /* opacity =0 will hide default menu bars on home page */
+        opacity: 0;
+    }
+
+    header .navbar ul {
+        /* navbar in column: vertical list*/
+        flex-flow: column;
+        /* padding from top bottom to vertical list */
+        padding: 10px 0;
+        background-color:  #2f111faf;
+
+    }
+
+    header .navbar ul li {
+        width: 100%;
+        text-align: center;
+        /* vertical- margin between list */
+        margin: 5px 0;
+    }
+
+    header .navbar ul li a {
+        font-size: 25px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        display: block;
+        color: rgb(243, 230, 230);
+
+
+    }
+
+
+    /* navlist appear  */
+    header .nav-toggle {
+        top: 6%;
+        opacity: 1;
+    }
+
+    /* responsive heading "event planner"*/
+    .home .content h1 {
+        font-size: 50px;
+    }
+
+    /* responsive paragraph content */
+    .home .content p {
+        width: auto;
+    }
+
+    .service .box-container {
+        width: auto;
+    }
+    
+    #background-video
+    {
+        width: 100%;
+        height: auto;
+    }
+    .about .row .image img 
+    { width: 100%;
+        height: auto;
+        margin: 0px;
+    }
+}
+
+/* *****************media quries ended for navigation!******************/
+
+/* media queries for feedback page */
+@media (max-width:768px) {
+
+    .feedback .form-container form .inputBox input,
+    select {
+        width: 100%;
+    }
+
+    .feedback .form-container form {
+        width: 90%;
+    }
+}
